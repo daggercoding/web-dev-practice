@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <style>
+        *{
+          box-sizing: border-box;  
+          scroll-behavior: auto;
+
+        }
+        body
+        {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 17px;
+        margin:10px;
+        padding:8px;
+       }
+       .main
+       {
+        background-color: rgba(211, 224, 235, 0.343);
+        padding: 15px;
+        border: 2px solid black;
+        border-radius: 5px;
+        }
+        input[type=text],input[type=number],input[type=password],
+        input[type=email],select,textarea,input[type=date]
+        {
+            background-color: white;
+            margin: 10px;
+            padding: 5px;
+            width: 100%;
+            border:2px solid rgba(0, 0, 0, 0.541);
+            border-radius: 5px;
+        }
+        h1
+        {
+            text-align: center;
+            font-size: 35px;
+            letter-spacing: 2px;
+            text-shadow: 0px 0px 1px rgb(129, 254, 173);
+        }
+        h3
+        {
+            text-decoration: underline;
+            font-size: 20px;
+
+        }
+        fieldset
+        {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            border:2px solid rgba(0, 0, 0, 0.541);
+            border-radius: 5px;
+
+        }
+        input[type=submit],input[type=reset]
+            {
+            font-size: 18px;
+            color:black;
+            background-color: rgba(145, 255, 71, 0.555) ;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 2px;
+            margin-left:7px;
+        }
+        input[type=submit]:hover
+            {
+            font-size: 18px;
+            color:rgb(42, 154, 28);
+            background-color: white;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            padding: 1px;
+            font-weight:bolder;
+        }
+            input[type=reset]:hover
+            {
+                font-size: 18px;
+                color:rgba(255, 14, 14, 0.961);
+                background-color: white;
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 5px;
+                padding: 1px;
+                font-weight: bolder;
+            }
+            .img
+            {
+                height:30px;
+                width:40px;
+                border: 1px solid rgb(0, 0, 0);
+                border-radius: 5px;
+                margin: -100px 0px 0px 5px;
+                padding: 1px;
+            }
+            img:hover
+            {
+                    height:30px;
+                    width:40px;
+                    border: 1px solid rgba(0, 0, 0, 0.856);
+                    border-radius: 5px;
+                    
+                    padding: 3px;
+              } 
+    </style>
+    
+</head>
+<body>
+   <div class="main">
+    <h1>Payment Form</h1>
+    <HR/>
+    <H3>BASIC DETAILS</H3>
+    <form>
+    NAME:<input type="text" name="Name" required autofocus/><br/><br/>
+    Adress:<textarea width="200px"></textarea><br/>
+    GMAIL:<input type="email" name="Gmail"/><br/><BR/>
+    PASSWORD:<input type="password" name="Password"/><br/><br/>
+
+    <fieldset>
+        <legend>GENDER</legend>
+        <input type="radio" name="GENDER"/>MALE
+        <input type="radio" name="GENDER"/>FEMALE
+        <input type="radio" name="GENDER"/>OTHER
+    </fieldset>
+    <BR/>
+    <fieldset>
+        <legend>TRANSACTION</legend>
+        <input type="radio" name="TRANSACTION"/>ONLINE
+        <input type="radio" name="TRANSACTION"/>OFFLINE          
+    </fieldset>
+    <BR/>
+    <select>
+        <option>SELECT YOUR CITY</option>
+        <option value="GWALIOR">GWALIOR</option>
+        <option value="DELHI">DELHI</option>
+        <option value="BANGLORE">BANGLORE</option>
+        <option value="CHANDIGARH">CHANDIGARH</option>
+        <option value="MIRZAPUR">MIRZAPUR</option>
+    </select>
+    
+    <BR/>
+    <hr/>
+    <h3>CARD DETAILS</h3>
+    <img src="phonepe.jpg" alt="image is missing" class="img"/>
+    <img src="mastercard.jpg" alt="image is missing" class="img"/>
+    <img src="visa.jpg" alt="image is missing" class="img"/>
+    <br/><br/>
+    CARD-NO:<input  type="NUMBER" name="CARD-NUMBER" required/>
+    CVV:<input type="password" name="CVV"/ required> <br/><br/> 
+    Expiry:<input type="date" name="Expiry" required/><br/> <br/>
+   
+    <input type="submit" value="PAY NOW"/>
+    <input type="reset" value="CANCEL"/><br/>
+
+    </form>
+   </div>
+
+</body>
+</html>

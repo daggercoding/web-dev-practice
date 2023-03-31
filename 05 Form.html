@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<body>
+   
+    <h1>Payment Form</h1>
+    <HR/>
+    <H3>BASIC DETAILS</H3>
+    <form>
+    NAME:<input type="text" name="Name" required autofocus/><br/><br/>
+    Adress:<textarea width="200px"></textarea><br/>
+    GMAIL:<input type="email" name="Gmail"/><br/><BR/>
+    PASSWORD:<input type="password" name="Password"/><br/><br/>
+
+    <fieldset>
+        <legend>GENDER</legend>
+        <input type="radio" name="GENDER"/>MALE
+        <input type="radio" name="GENDER"/>FEMALE
+        <input type="radio" name="GENDER"/>OTHER
+    </fieldset>
+    <BR/>
+    <fieldset>
+        <legend>TRANSACTION</legend>
+        <input type="radio" name="TRANSACTION"/>ONLINE
+        <input type="radio" name="TRANSACTION"/>OFLINE          
+    </fieldset>
+    <BR/>
+    <select>
+        <option>SELECT YOUR CITY</option>
+        <option value="GWALIOR">GWALIOR</option>
+        <option value="DELHI">DELHI</option>
+        <option value="BANGLORE">BANGLORE</option>
+        <option value="CHANDIGARH">CHANDIGARH</option>
+        <option value="MIRZAPUR">MIRZAPUR</option>
+    </select>
+    
+    <BR/>
+    <h3>CARD DETAILS</h3><hr/><br/>
+    CARD-NO:<input  type="NUMBER" name="CARD-NUMBER" required/>
+    CVV<input type="password" name="CVV"/ required> <br/><br/>  
+    <input type="submit" value="PAY NOW"/>
+    <input type="reset"/><br/>
+    </form>
+
+</body>
+</html>
