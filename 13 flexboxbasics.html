@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX</title>
+    <style>
+        .container
+        {   
+            height: 500px;
+            background-color: rgba(0, 255, 255, 0.244);
+            display: flex; /*initializing FLEX box*/
+            flex-direction: row; /*row/column/row-reverse/column-reverse */
+           /* justify-content: center; /*flex-start/flex-end/space-around/space-between/space-evenly/right/left*/
+           /* align-items: center; /* center/flex-start/flex-end*/
+            /*flex-wrap: wrap; /*wrap/wrap-reverse it is sued to maintain the structure of objects */
+            /*flex-wrap: column wrap;/*shorthand property*/
+        
+        }
+        .main
+        {
+            height: 125px;
+            width:150px;
+            border:2px solid black;
+            background-color: rgba(250, 235, 215, 0.704);
+            text-align:center;
+            padding-top: 25px;
+            margin: 5px;
+        }
+        .m1
+        {
+        background-color: rgba(0, 0, 255, 0.427);
+        flex-grow: 2;
+        flex-shrink: 2;
+        order: 5;
+        align-self: center;
+        }
+        .m2
+        {
+        background-color: rgba(255, 0, 0, 0.415);
+        flex-grow: 2.1;
+        order: 4;
+        }
+        .m3
+        {
+        background-color: rgba(0, 255, 106, 0.427);
+        order:3;
+        align-self: center;
+        }
+        .m4
+        {
+        background-color: rgba(0, 255, 200, 0.427);
+        flex-shrink: 2.1;
+        order:2;
+        }
+        .m5
+        {
+        background-color: rgba(255, 115, 0, 0.427);
+        order:1;
+        align-self:center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main m1">box1</div>
+        <div class="main m2">box2</div>
+        <div class="main m3">box3</div>
+        <div class="main m4">box4</div>
+        <div class="main m5">box5</div>
+    </div>
+
+    
+</body>
+</html>
