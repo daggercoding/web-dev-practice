@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: none;
+            padding: none;
+            
+
+        }
+        .container 
+        {  
+            margin-top: -1%;
+            margin-left:-0.5% ;
+            width:auto;
+            height:600px;
+            background-color: rgba(250, 235, 215, 0.173);
+            position: relative;
+            overflow: hidden;
+            
+        }
+        .car
+        {
+            width:380px;
+            height:300px;
+            position:absolute;
+            right:0px;
+            top: 300px;
+            animation:car 0.05s infinite;
+            animation-timing-function: linear;
+        
+        
+        }
+        @keyframes car{
+            from
+            {
+                right: -380px;
+                top: 320px;
+            }
+           to
+           {
+            right:100%;
+            top: 320px;
+
+           }
+        }
+        .tesla
+        {
+            width:350px;
+            height:100px;
+            position:absolute;
+            left:0px;
+            top: 300px;
+            animation:tesla 0.05s infinite;
+            animation-timing-function: ease-in-out;
+           
+
+           
+        }
+        @keyframes tesla
+        {
+            from
+            {
+                left:-350px;
+                top: 300px;
+            }
+           to
+           {
+               left:100%;
+               top:300px;
+
+           }
+        }
+        .batman
+        {
+            width:200px;
+            height:100px;
+            position:absolute;
+            left:0px;
+            top: 1px;
+            animation:batman 10s infinite;
+            animation-timing-function: linear;
+       
+        }
+        @keyframes batman
+        {
+            from
+            {
+                left:-200px;
+                top: 180px;
+            }
+           to
+           {
+               left:100%;
+               top:0px;
+
+           }
+        }
+      
+       
+    </style>
+</head>
+<body>
+    <div class="container"><img src="road.jpg" width="100%" height="100%">
+        <div class="car"><img src="car.png" width="100%" height="100%"></div>
+        <div class="tesla"><img src="tesla.png" width="100%" height="100%"></div>
+        <div class="batman"><img src="batman.png" width="100%" height="100%" alt="image not avilable"></div>
+        
+    </div>
+    
+</body>
+</html>
