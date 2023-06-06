@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: none;
+            margin:none;
+            box-sizing: border-box;
+
+         }
+        .container
+        {
+           width:1000px;
+           height:600px;
+           background-color: antiquewhite;
+           border:2px solid black;
+           display:grid;
+           row-gap: 10px;
+           grid-template-columns: auto auto auto;/*it defines the width of column*/
+           grid-template-columns:200px 100px 300px;
+          /* grid-template-columns:repeat(4,1fr);*/
+           column-gap: 20px;
+           grid-template-rows: 50px 60px ; /*if defines the height of the row*/
+           grid-auto-rows: 100px; /*if defines the height of the unlisted row*/
+           justify-content : center;
+           align-content: center;
+          
+
+        }
+        
+           .box{
+            background:red ;
+            text-align: center;
+            margin: 2px;
+            padding: 12px;
+        }
+        #box-1
+        {
+            grid-row-start:1 ;
+            grid-row-end: 6;
+            background-color: rgba(0, 255, 255, 0.511);
+        }
+        #box-2
+        {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: rgba(0, 0, 255, 0.501);
+
+        }
+         #box-5
+        {
+            grid-row: 2/ span 2;
+            background-color: rgb(255, 255, 59);
+        }
+        #box-8
+        {
+            grid-column: -3/-1;
+            background-color: rgba(95, 158, 160, 0.46);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+        <div class="box" id="box-8">box-8</div>
+       
+    </div>
+    
+</body>
+</html>
